@@ -13,8 +13,10 @@
 
         <!-- Welcome Screen -->
         <section id="welcome-screen" class="screen active">
+            <div class="icon">🧠</div>
             <h1>Interactive Quiz</h1>
             <p>Test your knowledge and challenge yourself!</p>
+            <p class="quiz-info">5 Questions • Multiple Choice</p>
             <button id="start-btn">Start Quiz</button>
         </section>
 
@@ -30,11 +32,9 @@
                 <div id="progress-bar"></div>
             </div>
 
-            <h2 id="question-text">Question appears here</h2>
+            <h2 id="question-text"></h2>
 
-            <div id="options-container">
-                <!-- Answer options will be added using JavaScript -->
-            </div>
+            <div id="options-container"></div>
 
             <button id="next-btn" disabled>Next Question</button>
 
@@ -42,10 +42,11 @@
 
         <!-- Result Screen -->
         <section id="result-screen" class="screen">
+            <div class="icon">🏆</div>
             <h1>Quiz Completed!</h1>
-            <p id="final-score">Your Score: 0 / 5</p>
-            <p id="result-message">Good effort!</p>
-            <button id="restart-btn">Restart Quiz</button>
+            <p id="final-score"></p>
+            <p id="result-message"></p>
+            <button id="restart-btn">Play Again</button>
         </section>
 
     </main>
